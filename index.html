@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1>Hello World!</h1>
+    <h1>Hello World!!!</h1>
+    <p>This is really cool!</p>
+    <button onclick="window.countUp()">Press Me!</button>
+    <p id="total-count"></p>
+    <script type="text/javascript">
+      let count = 0;
+      window.countUp = () => {
+        count = count + 1;
+        console.log(`count`, count)
+        document.getElementById('total-count').innerHTML = count.toString()
+      }
+    </script>
   </body>
 </html>
