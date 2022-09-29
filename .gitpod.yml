@@ -1,0 +1,4 @@
+tasks:
+  - name: dev
+    init: npm install -g  browser-sync
+    command: browser-sync -f *.html -f *.js --no-open --no-ui --listen 0.0.0.0
